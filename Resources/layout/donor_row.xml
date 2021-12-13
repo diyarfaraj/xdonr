@@ -24,7 +24,6 @@ android:elevation="1dp"
 				android:layout_height="60dp"
                 android:layout_centerVertical="true"
                 android:id="@+id/donor_image"
-                android:background="@android:color/holo_orange_dark"
                 />
             <TextView
 				android:layout_width="wrap_content"

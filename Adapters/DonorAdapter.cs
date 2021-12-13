@@ -42,6 +42,30 @@ namespace xdonr.Adapters
             holder.name.Text = donor.FullName;
             holder.location.Text = donor.City +", " + donor.Country;
             holder.name.Text = donor.FullName;
+            switch (donor.BloodGroup)
+            {
+                case "O+":
+                    holder.bloodGroupImage.SetImageResource(Resource.Drawable.o_positive);
+                    break;
+                case "A+":
+                    holder.bloodGroupImage.SetImageResource(Resource.Drawable.a_positive);
+                    break;
+                case "AB+":
+                    holder.bloodGroupImage.SetImageResource(Resource.Drawable.ab_positive);
+                    break;
+                case "AB-":
+                    holder.bloodGroupImage.SetImageResource(Resource.Drawable.ab_negative);
+                    break;
+                case "B+":
+                    holder.bloodGroupImage.SetImageResource(Resource.Drawable.b_positive);
+                    break;
+                case "A-":
+                    holder.bloodGroupImage.SetImageResource(Resource.Drawable.a_negative);
+                    break;
+                default:
+                    holder.bloodGroupImage.SetImageResource(Resource.Drawable.o_negative);
+                    break;
+            }
 
         }
 
@@ -73,7 +97,6 @@ namespace xdonr.Adapters
             callLayout = (RelativeLayout)itemView.FindViewById(Resource.Id.call_layout);
             emailLayout = (RelativeLayout)itemView.FindViewById(Resource.Id.email_layout);
             deleteLayout = (RelativeLayout)itemView.FindViewById(Resource.Id.delete_layout);
-
 
             itemView.Click += (sender, e) => clickListener(new DonorAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
             itemView.LongClick += (sender, e) => longClickListener(new DonorAdapterClickEventArgs { View = itemView, Position = AdapterPosition });

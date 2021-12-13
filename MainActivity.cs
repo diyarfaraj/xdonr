@@ -29,10 +29,17 @@ namespace xdonr
         void CreateData()
         {
             donorsList = new List<Donor>();
-            donorsList.Add(new Donor { BloodGroup = "A", City = "Borås", Country = "Sweden", Email = "hehe@hehe.se", FullName = "visxxousxoua", Phone = "0707070707" });
-            donorsList.Add(new Donor { BloodGroup = "b", City = "fristad", Country = "Sweden", Email = "hehe@hehe.se", FullName = "Ankan nakin", Phone = "0707070707" });
-            donorsList.Add(new Donor { BloodGroup = "c", City = "Hillared", Country = "Sweden", Email = "hehe@hehe.se", FullName = "Manen manen", Phone = "0707070707" });
-            donorsList.Add(new Donor { BloodGroup = "d", City = "jamaren", Country = "Sweden", Email = "hehe@hehe.se", FullName = "Pita mein bruda", Phone = "0707070707" });
+            donorsList.Add(new Donor { BloodGroup = "A+", City = "Borås", Country = "Sweden", Email = "hehe@hehe.se", FullName = "visxxousxoua", Phone = "0707070707" });
+            donorsList.Add(new Donor { BloodGroup = "B+", City = "fristad", Country = "Sweden", Email = "hehe@hehe.se", FullName = "Ankan nakin", Phone = "0707070707" });
+            donorsList.Add(new Donor { BloodGroup = "B-", City = "Hillared", Country = "Sweden", Email = "hehe@hehe.se", FullName = "Manen manen", Phone = "0707070707" });
+            donorsList.Add(new Donor { BloodGroup = "AB+", City = "jamaren", Country = "Sweden", Email = "hehe@hehe.se", FullName = "Pita mein bruda", Phone = "0707070707" });
+            donorsList.Add(new Donor { BloodGroup = "AB-", City = "Borås", Country = "Sweden", Email = "hehe@hehe.se", FullName = "visxxousxoua", Phone = "0707070707" });
+            donorsList.Add(new Donor { BloodGroup = "O-", City = "fristad", Country = "Sweden", Email = "hehe@hehe.se", FullName = "Ankan nakin", Phone = "0707070707" });
+            donorsList.Add(new Donor { BloodGroup = "O+", City = "Hillared", Country = "Sweden", Email = "hehe@hehe.se", FullName = "Manen manen", Phone = "0707070707" });
+            donorsList.Add(new Donor { BloodGroup = "AB+", City = "jamaren", Country = "Sweden", Email = "hehe@hehe.se", FullName = "Pita mein bruda", Phone = "0707070707" }); donorsList.Add(new Donor { BloodGroup = "A", City = "Borås", Country = "Sweden", Email = "hehe@hehe.se", FullName = "visxxousxoua", Phone = "0707070707" });
+            donorsList.Add(new Donor { BloodGroup = "A-", City = "fristad", Country = "Sweden", Email = "hehe@hehe.se", FullName = "Ankan nakin", Phone = "0707070707" });
+            donorsList.Add(new Donor { BloodGroup = "AB+", City = "Hillared", Country = "Sweden", Email = "hehe@hehe.se", FullName = "Manen manen", Phone = "0707070707" });
+            donorsList.Add(new Donor { BloodGroup = "O+", City = "jamaren", Country = "Sweden", Email = "hehe@hehe.se", FullName = "Pita mein bruda", Phone = "0707070707" });
 
         }
 

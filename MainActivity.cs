@@ -7,6 +7,7 @@ using Android.Support.V7.Widget;
 using xdonr.Adapters;
 using System.Collections.Generic;
 using xdonr.Models;
+using System;
 
 namespace xdonr
 {
@@ -47,8 +48,21 @@ namespace xdonr
         {
             donorsRecyclerView.SetLayoutManager(new LinearLayoutManager(donorsRecyclerView.Context));
             donorAdapter = new DonorAdapter(donorsList);
+            donorAdapter.EmailClick += DonorsAdapter_EmailClick;
+            donorAdapter.CallClick += DonorsAdapter_CallClick;
+
             donorsRecyclerView.SetAdapter(donorAdapter);
         }
 
+        private void DonorsAdapter_CallClick(object sender, DonorAdapterClickEventArgs e)
+        {
+            Toast.MakeText(this, "callclick was clicked", ToastLength.Short).Show();
+        }
+
+        private void DonorsAdapter_EmailClick(object sender, DonorAdapterClickEventArgs e)
+        {
+            Toast.MakeText(this, "email was clicked", ToastLength.Short).Show();
+
+        }
     }
 }

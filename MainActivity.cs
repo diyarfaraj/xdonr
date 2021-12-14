@@ -8,6 +8,7 @@ using xdonr.Adapters;
 using System.Collections.Generic;
 using xdonr.Models;
 using System;
+using System.Linq;
 
 namespace xdonr
 {
@@ -56,7 +57,9 @@ namespace xdonr
 
         private void DonorsAdapter_CallClick(object sender, DonorAdapterClickEventArgs e)
         {
-            Toast.MakeText(this, "callclick was clicked", ToastLength.Short).Show();
+            var donor = donorsList.Single(d => d.BloodGroup == donorsList[e.Position].BloodGroup);
+            donorsList.RemoveAt(e.Position);
+            donorAdapter.NotifyDataSetChanged();
         }
 
         private void DonorsAdapter_EmailClick(object sender, DonorAdapterClickEventArgs e)

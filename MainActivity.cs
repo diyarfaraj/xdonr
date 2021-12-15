@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using xdonr.Models;
 using System;
 using System.Linq;
+using Android.Support.Design.Widget;
 
 namespace xdonr
 {
@@ -23,9 +24,17 @@ namespace xdonr
             base.OnCreate(savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
+            SupportActionBar.Title = "Blood Donors";
             donorsRecyclerView = (RecyclerView)FindViewById(Resource.Id.donor_recycler_view);
+            FloatingActionButton fab = (FloatingActionButton)FindViewById(Resource.Id.fab);
+            fab.Click += Fab_Click;
             CreateData();
             SetUpRecyclerView();
+        }
+
+        private void Fab_Click(object sender, EventArgs e)
+        {
+            Toast.MakeText(this, "Floainf action button clicked", ToastLength.Short).Show();
         }
 
         void CreateData()

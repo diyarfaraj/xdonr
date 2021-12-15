@@ -1,12 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<android.support.v7.widget.RecyclerView
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"> 
+    <android.support.v7.widget.RecyclerView
         android:id="@+id/donor_recycler_view"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
     android:scrollbars="vertical"/>
-</RelativeLayout>
+    </RelativeLayout>
+
+   <FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+    android:layout_gravity="bottom|right">
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:color/transparent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@android:string/ok"
+        android:elevation="16dp"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+</FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

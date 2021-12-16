@@ -269,4 +269,6 @@ C:\Users\User\source\repos\xdonr\obj\Debug\90\stamp\_ConvertResourcesCases.stamp
 C:\Users\User\source\repos\xdonr\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\User\source\repos\xdonr\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\User\source\repos\xdonr\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\User\source\repos\xdonr\obj\Debug\90\res\layout\add_new.xml
+C:\Users\User\source\repos\xdonr\obj\Debug\90\android\src\crc64c5a85efa22e32ae5\AddDonorFragment.java
 C:\Users\User\source\repos\xdonr\obj\Debug\90\xdonr.csprojAssemblyReference.cache

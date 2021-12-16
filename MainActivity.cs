@@ -10,6 +10,7 @@ using xdonr.Models;
 using System;
 using System.Linq;
 using Android.Support.Design.Widget;
+using xdonr.Fragments;
 
 namespace xdonr
 {
@@ -19,6 +20,7 @@ namespace xdonr
         RecyclerView donorsRecyclerView;
         DonorAdapter donorAdapter;
         List<Donor> donorsList;
+        AddDonorFragment addDonorFragment;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -34,7 +36,9 @@ namespace xdonr
 
         private void Fab_Click(object sender, EventArgs e)
         {
-            Toast.MakeText(this, "Floainf action button clicked", ToastLength.Short).Show();
+            addDonorFragment = new AddDonorFragment();
+            var trans = SupportFragmentManager.BeginTransaction();
+            addDonorFragment.Show(trans, "Add new");
         }
 
         void CreateData()

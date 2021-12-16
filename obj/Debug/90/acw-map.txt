@@ -1,6 +1,9 @@
 xdonr.MainActivity, xdonr;crc64b9ee586c6ae9c78e.MainActivity
 xdonr.MainActivity;crc64b9ee586c6ae9c78e.MainActivity
 xdonr.MainActivity;crc64b9ee586c6ae9c78e.MainActivity
+xdonr.Fragments.AddDonorFragment, xdonr;crc64c5a85efa22e32ae5.AddDonorFragment
+xdonr.Fragments.AddDonorFragment;crc64c5a85efa22e32ae5.AddDonorFragment
+xdonr.fragments.AddDonorFragment;crc64c5a85efa22e32ae5.AddDonorFragment
 xdonr.Adapters.DonorAdapter, xdonr;crc64802580bccd059c92.DonorAdapter
 xdonr.Adapters.DonorAdapter;crc64802580bccd059c92.DonorAdapter
 xdonr.adapters.DonorAdapter;crc64802580bccd059c92.DonorAdapter

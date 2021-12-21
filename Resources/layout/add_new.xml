@@ -48,6 +48,16 @@
                 android:inputType="textPersonName"
                 android:imeOptions="actionNext"/>
         </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_height="50dp"
+            android:layout_width="300dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Save"
+            android:textStyle="bold">
+        </Button>
     
     </LinearLayout>
 </LinearLayout>

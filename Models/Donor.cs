@@ -11,7 +11,7 @@ using System.Text;
 
 namespace xdonr.Models
 {
-    class Donor
+    public class Donor
     {
         public string FullName { get; set; }
         public string Email { get; set; }
